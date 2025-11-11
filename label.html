@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Labeling {{ filename }}</title>
+</head>
+<body>
+    <h2>Labeling File: {{ filename }}</h2>
+    <form method="post" action="/submit/{{ filename }}">
+        {% for chunk in chunks %}
+        <hr>
+        <p><strong>Chunk {{ loop.index }}:</strong> ({{ chunk.chunk_id }})</p>
+        <p><em>File Asal:</em> {{ chunk.filename }}</p>
+        <textarea name="text" rows="4" cols="80">{{ chunk.text }}</textarea><br>
+        <input type="hidden" name="chunkid" value="{{ chunk.chunk_id }}">
+        <input type="hidden" name="filename_" value="{{ chunk.filename }}">
+        <label>
+            <input type="radio" name="label_{{ loop.index0 }}" value="1"> ✅ Relevan
+        </label>
+        <label>
+            <input type="radio" name="label_{{ loop.index0 }}" value="0" checked> ❌ Tidak Relevan
+        </label>
+        {% endfor %}
+        <br><br>
+        <button type="submit">Simpan Label</button>
+    </form>
+</body>
+</html>
