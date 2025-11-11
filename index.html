@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Labeling Tool</title>
+</head>
+<body>
+    <h2> Daftar File JSON</h2>
+    <ul>
+        {% for file in files %}
+            <li><a href="/label/{{ file }}">{{ file }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
