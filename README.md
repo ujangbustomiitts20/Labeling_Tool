@@ -1,5 +1,5 @@
 
-# 🏷️ Alat Pelabelan (Labeling Tool) Berbasis FastAPI
+#  Alat Pelabelan (Labeling Tool) Berbasis FastAPI
 
 Proyek ini merupakan **alat pelabelan berbasis web** yang dibangun menggunakan **FastAPI** dan **Jinja2**.
 Tujuannya adalah untuk meninjau hasil *retrieval* dari file JSON, kemudian memberi label seperti **relevan** atau **tidak relevan** secara interaktif.
@@ -7,7 +7,7 @@ Hasil pelabelan disimpan otomatis dalam folder terpisah dan dapat digunakan untu
 
 ---
 
-## 📁 Struktur Proyek
+##  Struktur Proyek
 
 ```
 your_project/
@@ -25,7 +25,7 @@ your_project/
 
 ---
 
-## ⚙️ Persyaratan
+##  Persyaratan
 
 Instal semua dependensi berikut terlebih dahulu:
 
@@ -41,7 +41,7 @@ pip install python-multipart
 
 ---
 
-## 🚀 Cara Menjalankan Aplikasi
+##  Cara Menjalankan Aplikasi
 
 Jalankan aplikasi FastAPI menggunakan **Uvicorn**:
 
@@ -54,7 +54,7 @@ Kemudian buka di browser:
 
 ---
 
-## 🧩 Alur Kerja Aplikasi
+##  Alur Kerja Aplikasi
 
 Berikut adalah diagram alur logika kerja aplikasi:
 
@@ -72,7 +72,7 @@ flowchart TD
 
 ---
 
-## 🧱 Penjelasan Tiap Template
+##  Penjelasan Tiap Template
 
 ### **index.html**
 
@@ -89,7 +89,7 @@ Menampilkan hasil pelabelan yang telah disimpan, lengkap dengan teks dan nilai l
 
 ---
 
-## 🧮 Contoh Struktur File JSON
+##  Contoh Struktur File JSON
 
 **Contoh input (`retrieval_apbd.json`):**
 
@@ -129,7 +129,7 @@ Menampilkan hasil pelabelan yang telah disimpan, lengkap dengan teks dan nilai l
 
 ---
 
-## 💡 Catatan Tambahan
+##  Catatan Tambahan
 
 * Nilai label dapat diubah atau ditambah (misalnya `2 = netral`, `3 = tidak yakin`) dengan menyesuaikan bagian **radio button** di `label.html`.
 * Aplikasi ini sudah mendukung **CORS**, sehingga bisa diintegrasikan dengan sistem atau dashboard lain.
@@ -138,7 +138,7 @@ Menampilkan hasil pelabelan yang telah disimpan, lengkap dengan teks dan nilai l
 
 ---
 
-## 📜 Lisensi
+##  Lisensi
 
 Proyek ini dirilis di bawah lisensi **MIT License**.
 Silakan digunakan, dimodifikasi, dan dikembangkan untuk kebutuhan penelitian, anotasi data, maupun proyek NLP lainnya.
