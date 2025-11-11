@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hasil Labeling - {{ filename }}</title>
+</head>
+<body>
+    <h2> Hasil Labeling untuk: {{ filename }}</h2>
+    <ul>
+        {% for item in chunks %}
+            <li>
+                <b>{{ item.chunk_id }}</b> - Label: {{ item.label }}<br>
+                <pre>{{ item.text }}</pre>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/">⬅️ Kembali ke Daftar File</a>
+</body>
+</html>
