@@ -63,10 +63,11 @@ flowchart TD
     A[Mulai Aplikasi FastAPI] --> B["Halaman Utama (/)"]
     B -->|Pilih file JSON| C["Halaman Pelabelan (/label/{filename})"]
     C --> D{Pengguna memberi label}
-    D -->|✅ Relevan (1)| E["Simpan ke labeled_results/"]
-    D -->|❌ Tidak Relevan (0)| E
+    D -->|"[OK] Relevan (1)"| E["Simpan ke labeled_results/"]
+    D -->|"[X] Tidak Relevan (0)"| E
     E --> F["Tampilkan hasil di /hasil/{filename}"]
     F --> G["Kembali ke Halaman Utama"]
+
 ```
 
 ---
